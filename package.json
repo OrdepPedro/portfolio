@@ -1,0 +1,21 @@
+{
+  "name": "personalwebsite",
+  "version": "1.0.0",
+  "description": "Personal Website",
+  "main": "index.js",
+  "scripts": {
+    "sass": "node-sass -w scss/ -o dist/css --recursive"
+  },
+  "keywords": [
+    "portfolio",
+    "web",
+    "developer",
+    "graphic",
+    "designer"
+  ],
+  "author": "Pedro Fontoura",
+  "license": "ISC",
+  "dependencies": {
+    "node-sass": "^4.14.1"
+  }
+}

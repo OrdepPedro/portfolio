@@ -1,0 +1,45 @@
+@import "config";
+
+.center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+%btn-shared {
+  display: inline-block;
+  transition: all 0.5s ease;
+  text-transform: uppercase;
+  position: relative;
+}
+
+.btn {
+  text-decoration: none;
+  &-left {
+    @extend %btn-shared;
+    border: solid 2px $light-color;
+    margin: auto;
+    padding: 1rem 4rem;
+    color: $light-color;
+    font-weight: 600;
+  }
+  &-right {
+    @extend %btn-shared;
+    border: solid 2px $dark-color;
+    margin: auto;
+    padding: 1rem 4rem;
+    color: $dark-color;
+    font-weight: 600;
+  }
+}
+
+.cursor {
+  width: 20px;
+  height: 20px;
+  border: 1px solid $yellow-color;
+  border-radius: 50%;
+  position: absolute;
+  z-index: 3000;
+}
