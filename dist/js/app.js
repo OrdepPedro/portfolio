@@ -28,7 +28,7 @@ class TypeWritter {
     this.txtElement.innerHTML = `<div class="text">${this.txt}</div>`;
 
     // Initial type speed
-    let typeSpeed = 300;
+    let typeSpeed = 200;
 
     if (this.isDeleting) {
       typeSpeed /= 2;
@@ -62,11 +62,29 @@ function init() {
   new TypeWritter(txtElement, words, wait);
 }
 
-const cursor = document.querySelector(".cursor");
+const cursor = document.querySelector("body > .cursor");
+const btns = document.querySelectorAll(".btn");
 
-document.addEventListener("mousemove", (e) => {
-  cursor.setAttribute(
-    "style",
-    "top: " + (e.pageY - 10) + "px; left: " + (e.pageX - 10) + "px;"
-  );
-});
+const animateIt = function (e) {
+  const span = this.querySelector("span");
+  const { offsetX: x, offsetY: y } = e,
+    { offsetWidth: width, offsetHeight: height } = this,
+    move = 20,
+    xMove = (x / width) * (move * 2) - move,
+    yMove = (y / height) * (move * 2) - move;
+
+  span.style.transform = `translate(${xMove}px, ${yMove}px)`;
+
+  if (e.type === "mouseleave") span.style.transform = "";
+};
+
+const editCursor = (e) => {
+  const { clientX: x, clientY: y } = e;
+  cursor.style.left = x + "px";
+  cursor.style.top = y + "px";
+};
+
+btns.forEach((b) => b.addEventListener("mousemove", animateIt));
+btns.forEach((b) => b.addEventListener("mouseleave", animateIt));
+
+window.addEventListener("mousemove", editCursor);

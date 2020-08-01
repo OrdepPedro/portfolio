@@ -7,32 +7,41 @@
 
 .btn-left, .btn-right {
   display: inline-block;
-  transition: all 0.5s ease;
   text-transform: uppercase;
-  position: relative; }
+  position: relative;
+  cursor: none;
+  font-weight: 600;
+  margin: auto;
+  padding: 1rem 4rem;
+  text-decoration: none; }
 
 .btn {
-  text-decoration: none; }
+  transition: all 0.3s ease; }
   .btn-left {
-    border: solid 2px #bbb;
-    margin: auto;
-    padding: 1rem 4rem;
-    color: #bbb;
-    font-weight: 600; }
+    border: solid 2px #ccc;
+    color: #ccc; }
   .btn-right {
     border: solid 2px #333;
-    margin: auto;
-    padding: 1rem 4rem;
-    color: #333;
-    font-weight: 600; }
+    color: #333; }
+
+span {
+  pointer-events: none;
+  display: inline-block; }
 
 .cursor {
+  pointer-events: none;
   width: 20px;
   height: 20px;
-  border: 1px solid #eab354;
+  background: #fff;
   border-radius: 50%;
-  position: absolute;
-  z-index: 3000; }
+  position: fixed;
+  mix-blend-mode: difference;
+  transform: translate(-50%, -50%);
+  transition: transform 0.3s ease;
+  z-index: 20000; }
+
+.btn:hover ~ .cursor {
+  transform: translate(-50%, -50%) scale(2); }
 
 * {
   margin: 0;
@@ -59,7 +68,7 @@ body {
   height: 100%;
   width: 50%;
   position: fixed;
-  z-index: 1;
+  z-index: -10;
   top: 0;
   padding-top: 20px; }
 
@@ -69,4 +78,7 @@ body {
 
 .right {
   right: 0;
-  background-color: #bbb; }
+  background-color: #ccc; }
+
+.name:hover ~ .cursor {
+  transform: translate(-50%, -50%) scale(4); }
