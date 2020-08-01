@@ -8,6 +8,7 @@
 }
 
 body {
+  position: relative;
   font-family: "Raleway", sans-serif;
   height: 100%;
   cursor: none;
@@ -46,4 +47,41 @@ body {
 
 .name:hover ~ .cursor {
   transform: translate(-50%, -50%) scale(4);
+}
+
+.about-me {
+  background: $light-color;
+  padding: 1rem;
+  border-radius: 0 15px 15px 0;
+  width: 15.625rem;
+  clip-path: circle(25% at 0% 0%);
+  transition: all 0.5s ease-out;
+
+  &:hover {
+    clip-path: circle(100%);
+    background: $light-color;
+  }
+
+  h2 {
+    color: $dark-color;
+    margin: 0;
+  }
+
+  p {
+    color: $dark-color;
+    margin: 0;
+  }
+
+  span {
+    top: 0px;
+    left: 0px;
+    color: $yellow-color;
+    font-weight: 600;
+    transition: color 0.5s;
+    position: relative;
+    margin: 0;
+  }
+  &:hover span {
+    color: $light-color;
+  }
 }
