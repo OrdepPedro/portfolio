@@ -21,6 +21,7 @@
 
 .btn {
   transition: all 0.3s ease;
+  z-index: 15000;
   &-left {
     @extend %btn-shared;
     border: solid 2px $light-color;

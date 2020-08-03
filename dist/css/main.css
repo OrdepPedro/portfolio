@@ -16,7 +16,8 @@
   text-decoration: none; }
 
 .btn {
-  transition: all 0.3s ease; }
+  transition: all 0.3s ease;
+  z-index: 15000; }
   .btn-left {
     border: solid 2px #ccc;
     color: #ccc; }
@@ -42,6 +43,130 @@ span {
 
 .btn-left:hover ~ .cursor {
   transform: translate(-50%, -50%) scale(2); }
+
+.sections {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; }
+  .sections .about-me {
+    background: #333;
+    padding: 1rem;
+    border-radius: 0 0 10px 0;
+    width: 15.625rem;
+    clip-path: polygon(0 0, 30% 0%, 30% 35%, 0% 35%);
+    transition: all 0.5s ease-out; }
+    .sections .about-me:hover {
+      clip-path: polygon(0 0, 100% 0%, 100% 100%, 0% 100%);
+      background: #ccc; }
+    .sections .about-me p {
+      color: #333;
+      font-weight: 600;
+      margin: 0; }
+    .sections .about-me span {
+      top: 0px;
+      left: 0px;
+      color: #ccc;
+      font-weight: 600;
+      transition: color 0.5s;
+      position: relative;
+      margin: 0; }
+    .sections .about-me:hover span {
+      color: #333; }
+  .sections .know-me {
+    background: #333;
+    padding: 1rem;
+    border-radius: 0 15px 0 0;
+    width: 300px;
+    clip-path: polygon(0 85%, 50% 85%, 50% 100%, 0% 100%);
+    transition: all 0.5s ease-out; }
+    .sections .know-me:hover {
+      clip-path: polygon(0 0, 100% 0%, 100% 100%, 0% 100%);
+      background: #ccc; }
+    .sections .know-me ul {
+      text-align: center;
+      list-style: none;
+      color: #333;
+      font-weight: 600;
+      margin: auto; }
+    .sections .know-me li {
+      padding: 0.4rem 0 0 0; }
+      .sections .know-me li:nth-child(6) {
+        padding-top: 0; }
+      .sections .know-me li i {
+        margin-right: 0.2rem; }
+    .sections .know-me span {
+      top: 0px;
+      left: 0px;
+      color: #ccc;
+      font-weight: 600;
+      transition: color 0.5s;
+      position: relative;
+      margin: 0; }
+    .sections .know-me:hover span {
+      color: #333; }
+
+.sections2 {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  text-align: right; }
+  .sections2 a {
+    text-decoration: none;
+    color: #ccc;
+    font-weight: 600; }
+    .sections2 a i {
+      padding-right: 0.2rem; }
+  .sections2 li {
+    list-style: none;
+    padding-top: 0.4rem 0; }
+  .sections2 .contact-me {
+    background: #ccc;
+    padding: 1rem;
+    border-radius: 0 0 0 10px;
+    width: 15.625rem;
+    clip-path: polygon(35% 0, 100% 0%, 100% 30%, 35% 30%);
+    transition: all 0.5s ease-out;
+    margin-left: auto; }
+    .sections2 .contact-me:hover {
+      clip-path: polygon(0 0, 100% 0%, 100% 100%, 0% 100%);
+      background: #333; }
+    .sections2 .contact-me p {
+      color: #ccc;
+      font-weight: 600;
+      margin: 0; }
+    .sections2 .contact-me span {
+      top: 0px;
+      left: 0px;
+      color: #333;
+      font-weight: 600;
+      transition: color 0.5s;
+      position: relative;
+      margin: 0; }
+    .sections2 .contact-me:hover span {
+      color: #ccc; }
+  .sections2 .resume {
+    background: #ccc;
+    padding: 1rem;
+    border-radius: 0 0 0 0;
+    width: 200px;
+    clip-path: polygon(30% 50%, 100% 50%, 100% 100%, 30% 100%);
+    transition: all 0.5s ease-out;
+    margin-left: auto; }
+    .sections2 .resume:hover {
+      clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+      background: #333; }
+    .sections2 .resume span {
+      top: 0px;
+      left: 0px;
+      color: #333;
+      font-weight: 600;
+      transition: color 0.5s;
+      position: relative;
+      margin: 0; }
+    .sections2 .resume:hover span {
+      color: #ccc; }
 
 * {
   margin: 0;
@@ -71,7 +196,7 @@ body {
   position: fixed;
   z-index: -10;
   top: 0;
-  padding-top: 20px; }
+  padding-top: 0; }
 
 .left {
   left: 0;
@@ -83,30 +208,3 @@ body {
 
 .name:hover ~ .cursor {
   transform: translate(-50%, -50%) scale(4); }
-
-.about-me {
-  background: #ccc;
-  padding: 1rem;
-  border-radius: 0 15px 15px 0;
-  width: 15.625rem;
-  clip-path: circle(25% at 0% 0%);
-  transition: all 0.5s ease-out; }
-  .about-me:hover {
-    clip-path: circle(100%);
-    background: #ccc; }
-  .about-me h2 {
-    color: #333;
-    margin: 0; }
-  .about-me p {
-    color: #333;
-    margin: 0; }
-  .about-me span {
-    top: 0px;
-    left: 0px;
-    color: #eab354;
-    font-weight: 600;
-    transition: color 0.5s;
-    position: relative;
-    margin: 0; }
-  .about-me:hover span {
-    color: #ccc; }
