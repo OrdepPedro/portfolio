@@ -88,3 +88,30 @@ btns.forEach((b) => b.addEventListener("mousemove", animateIt));
 btns.forEach((b) => b.addEventListener("mouseleave", animateIt));
 
 window.addEventListener("mousemove", editCursor);
+
+// Modal
+const openModalButton = document.querySelector("#openModal");
+const closeModalButton = document.querySelector("#closeModal");
+const modal = document.querySelector(".modal");
+
+// Event Listeners
+openModalButton.addEventListener("click", openModal);
+closeModalButton.addEventListener("click", closeModal);
+// window.addEventListener("click", outsideClick);
+
+// Open Function
+function openModal() {
+  modal.classList.add("active");
+}
+
+// Close Function
+function closeModal() {
+  modal.classList.remove("active");
+}
+
+// // Outside Click Function
+// function outsideClick(e) {
+//   if (e.target == modal) {
+//     modal.classList.remove("active");
+//   }
+// }

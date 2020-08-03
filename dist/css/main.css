@@ -218,12 +218,15 @@ span {
   position: fixed;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%) scale(0);
+  transition: 0.5s ease-in-out;
   background: #333;
   border: 2px solid #ccc;
   z-index: 10000;
   width: 600px;
   max-width: 75%; }
+  .modal.active {
+    transform: translate(-50%, -50%) scale(1); }
   .modal .modal-header {
     display: flex;
     flex-direction: row;
@@ -239,6 +242,7 @@ span {
     display: grid;
     grid-template-columns: 1fr; }
     .modal .form-fields input {
+      color: #ccc;
       font-family: "Raleway", sans-serif;
       font-weight: 600;
       margin: 0.8rem 1rem;
@@ -246,6 +250,7 @@ span {
       background: none;
       border: 2px solid #ccc; }
     .modal .form-fields textarea {
+      color: #ccc;
       font-family: "Raleway", sans-serif;
       font-weight: 600;
       margin: 0.8rem 1rem;

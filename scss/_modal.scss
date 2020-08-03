@@ -5,12 +5,17 @@
   position: fixed;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%) scale(0);
+  transition: 0.5s ease-in-out;
   background: $dark-color;
   border: 2px solid $light-color;
   z-index: 10000;
   width: 600px;
   max-width: 75%;
+
+  &.active {
+    transform: translate(-50%, -50%) scale(1);
+  }
 
   .modal-header {
     display: flex;
@@ -32,6 +37,7 @@
     grid-template-columns: 1fr;
 
     input {
+      color: $light-color;
       font-family: "Raleway", sans-serif;
       font-weight: 600;
       margin: 0.8rem 1rem;
@@ -41,6 +47,7 @@
     }
 
     textarea {
+      color: $light-color;
       font-family: "Raleway", sans-serif;
       font-weight: 600;
       margin: 0.8rem 1rem;
