@@ -1,0 +1,52 @@
+@import "config";
+@import "utilities";
+
+.modal {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: $dark-color;
+  border: 2px solid $light-color;
+  z-index: 10000;
+  width: 600px;
+  max-width: 75%;
+
+  .modal-header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 0.8rem;
+    color: $light-color;
+    font-weight: 600;
+    font-size: 2rem;
+
+    a {
+      font-size: 1.5rem;
+      color: $light-color;
+    }
+  }
+
+  .form-fields {
+    display: grid;
+    grid-template-columns: 1fr;
+
+    input {
+      font-family: "Raleway", sans-serif;
+      font-weight: 600;
+      margin: 0.8rem 1rem;
+      height: 2rem;
+      background: none;
+      border: 2px solid $light-color;
+    }
+
+    textarea {
+      font-family: "Raleway", sans-serif;
+      font-weight: 600;
+      margin: 0.8rem 1rem;
+      height: 8rem;
+      background: none;
+      border: 2px solid $light-color;
+    }
+  }
+}

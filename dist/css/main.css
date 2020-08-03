@@ -168,6 +168,91 @@ span {
     .sections2 .resume:hover span {
       color: #ccc; }
 
+.center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center; }
+
+.btn-left, .btn-right {
+  display: inline-block;
+  text-transform: uppercase;
+  position: relative;
+  cursor: none;
+  font-weight: 600;
+  margin: auto;
+  padding: 1rem 4rem;
+  text-decoration: none; }
+
+.btn {
+  transition: all 0.3s ease;
+  z-index: 15000; }
+  .btn-left {
+    border: solid 2px #ccc;
+    color: #ccc; }
+  .btn-right {
+    border: solid 2px #333;
+    color: #333; }
+
+span {
+  pointer-events: none;
+  display: inline-block; }
+
+.cursor {
+  pointer-events: none;
+  width: 20px;
+  height: 20px;
+  background: #fff;
+  border-radius: 50%;
+  position: fixed;
+  mix-blend-mode: difference;
+  transform: translate(-50%, -50%);
+  transition: transform 0.3s ease;
+  z-index: 20000; }
+
+.btn-left:hover ~ .cursor {
+  transform: translate(-50%, -50%) scale(2); }
+
+.modal {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: #333;
+  border: 2px solid #ccc;
+  z-index: 10000;
+  width: 600px;
+  max-width: 75%; }
+  .modal .modal-header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 0.8rem;
+    color: #ccc;
+    font-weight: 600;
+    font-size: 2rem; }
+    .modal .modal-header a {
+      font-size: 1.5rem;
+      color: #ccc; }
+  .modal .form-fields {
+    display: grid;
+    grid-template-columns: 1fr; }
+    .modal .form-fields input {
+      font-family: "Raleway", sans-serif;
+      font-weight: 600;
+      margin: 0.8rem 1rem;
+      height: 2rem;
+      background: none;
+      border: 2px solid #ccc; }
+    .modal .form-fields textarea {
+      font-family: "Raleway", sans-serif;
+      font-weight: 600;
+      margin: 0.8rem 1rem;
+      height: 8rem;
+      background: none;
+      border: 2px solid #ccc; }
+
 * {
   margin: 0;
   padding: 0;
