@@ -28,7 +28,9 @@
           <h2 class="description">Graphic Designer</h2>
         </div>
         <div class="btns-design">
-          <a href="#" class="btns-design-right">Get in Touch</a>
+          <a id="openModal" href="#modal" class="btns-design-right"
+            >Get in Touch</a
+          >
         </div>
       </div>
     </div>
@@ -38,12 +40,14 @@
         <div class="type">
           <div class="showcase">
             <div class="showcase-img">
-              <a href="#"
+              <a href="orbit-coletivo.html"
                 ><img src="./img/Prancheta 9.png" alt="Orbit Showcase"
               /></a>
             </div>
             <div class="showcase-title">
-              <a href="#"><h2 class="title">Orbit Coletivo</h2></a>
+              <a href="orbit-coletivo.html"
+                ><h2 class="title">Orbit Coletivo</h2></a
+              >
               <h3 class="year">2020</h3>
             </div>
             <p class="content">
@@ -70,6 +74,7 @@
         <div class="type">
           <div class="showcase">
             <div class="showcase-img">
+              <div class="overlay"></div>
               <img src="./img/Prancheta 9.png" alt="Orbit Showcase" />
             </div>
             <div class="showcase-title">
@@ -83,6 +88,27 @@
           </div>
         </div>
       </div>
+    </div>
+    <div class="modal" id="modal">
+      <div class="modal-header">
+        <div class="title">Contact Me</div>
+        <div class="close-button">
+          <a id="closeModal" href="#"><i class="fas fa-times"></i></a>
+        </div>
+      </div>
+      <form class="form-fields">
+        <input type="text" placeholder=" First and Last Name..." />
+        <input type="text" placeholder=" Subject..." />
+        <input type="email" placeholder=" Email..." />
+        <textarea
+          name="Message"
+          id=""
+          cols="30"
+          rows="10"
+          placeholder="Enter Message..."
+        ></textarea>
+      </form>
+      <button type="submit" class="btn btn-left">Submit</button>
     </div>
     <div class="cursor"></div>
 
