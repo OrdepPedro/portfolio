@@ -15,6 +15,24 @@
   padding: 1rem 4rem;
   text-decoration: none; }
 
+.btns-design-right {
+  display: inline-block;
+  position: relative;
+  cursor: pointer;
+  font-weight: 600;
+  margin: auto;
+  padding: 0.6rem 1.8rem; }
+
+.btns-design {
+  transition: all 0.3s ease;
+  margin: 1rem;
+  display: flex;
+  justify-content: space-between; }
+  .btns-design-right {
+    text-decoration: none;
+    background: #ccc;
+    color: #333; }
+
 .btn {
   transition: all 0.3s ease;
   z-index: 15000; }
@@ -185,6 +203,24 @@ span {
   padding: 1rem 4rem;
   text-decoration: none; }
 
+.btns-design-right {
+  display: inline-block;
+  position: relative;
+  cursor: pointer;
+  font-weight: 600;
+  margin: auto;
+  padding: 0.6rem 1.8rem; }
+
+.btns-design {
+  transition: all 0.3s ease;
+  margin: 1rem;
+  display: flex;
+  justify-content: space-between; }
+  .btns-design-right {
+    text-decoration: none;
+    background: #ccc;
+    color: #333; }
+
 .btn {
   transition: all 0.3s ease;
   z-index: 15000; }
@@ -257,6 +293,74 @@ span {
       height: 8rem;
       background: none;
       border: 2px solid #ccc; }
+
+.split {
+  height: 100%;
+  z-index: -10;
+  top: 0;
+  padding-top: 0; }
+
+.left {
+  left: 0;
+  background-color: #333;
+  position: fixed; }
+  .left .center {
+    margin: auto; }
+
+.right {
+  right: 0;
+  width: 50%;
+  background-color: #ccc;
+  min-height: 100vh;
+  overflow-y: auto; }
+  .right .work {
+    display: flex;
+    flex-direction: column;
+    margin: 2rem auto;
+    max-width: 80%; }
+    .right .work .type {
+      align-items: center; }
+      .right .work .type .showcase {
+        display: flex;
+        flex-direction: row;
+        background: #d6d6d6;
+        margin: 1rem;
+        -webkit-box-shadow: 5px 5px 15px -10px #333333;
+        -moz-box-shadow: 5px 5px 15px -10px #333333;
+        box-shadow: 5px 5px 15px -10px #333333; }
+        .right .work .type .showcase-img {
+          width: 100%; }
+          .right .work .type .showcase-img img {
+            width: 100%;
+            margin: 0.6rem 0.4rem 0.4rem 0; }
+        .right .work .type .showcase-title {
+          font-family: "Raleway", sans-serif;
+          text-align: center;
+          padding: 0 0.8rem;
+          margin: auto; }
+          .right .work .type .showcase-title .title {
+            color: #333;
+            font-size: 1.1rem; }
+
+.name-content {
+  line-height: 1.2; }
+  .name-content .name-design {
+    font-family: "Holtwood One SC", serif;
+    font-size: 3rem;
+    letter-spacing: 0.1rem;
+    color: #ccc; }
+  .name-content .description {
+    font-family: "Raleway", sans-serif;
+    font-size: 1rem;
+    letter-spacing: 0.6rem;
+    color: #ccc; }
+
+::-webkit-scrollbar {
+  width: 10px; }
+  ::-webkit-scrollbar-track {
+    background: #ccc; }
+  ::-webkit-scrollbar-thumb {
+    background: #333; }
 
 * {
   margin: 0;
