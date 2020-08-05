@@ -75,7 +75,3 @@ span {
   transition: transform 0.3s ease;
   z-index: 20000;
 }
-
-.btn-left:hover ~ .cursor {
-  transform: translate(-50%, -50%) scale(2);
-}

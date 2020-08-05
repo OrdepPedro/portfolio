@@ -89,6 +89,20 @@ btns.forEach((b) => b.addEventListener("mouseleave", animateIt));
 
 window.addEventListener("mousemove", editCursor);
 
+const hover = document.querySelectorAll(".hover");
+
+const grow = function () {
+  cursor.style.transform = "translate(-50%, -50%) scale(2)";
+};
+
+const shrink = function () {
+  cursor.style.transform = "translate(-50%, -50%) scale(1)";
+};
+hover.forEach((b) => {
+  b.addEventListener("mouseover", grow);
+  b.addEventListener("mouseout", shrink);
+});
+
 // Modal
 const openModalButton = document.querySelector("#openModal");
 const closeModalButton = document.querySelector("#closeModal");
