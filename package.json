@@ -16,7 +16,8 @@
   "author": "Pedro Fontoura",
   "license": "ISC",
   "dependencies": {
-    "node-sass": "^4.14.1"
+    "node-sass": "^4.14.1",
+    "sal.js": "^0.7.7"
   },
   "devDependencies": {
     "parcel-bundler": "^1.12.4"
