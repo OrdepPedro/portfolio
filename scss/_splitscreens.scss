@@ -1,0 +1,38 @@
+.split {
+  height: 100%;
+  width: 50%;
+  position: fixed;
+  z-index: -10;
+  top: 0;
+  padding-top: 0;
+}
+
+.left {
+  left: 0;
+
+  &-index,
+  &-design {
+    background-color: $dark-color;
+    position: fixed;
+    .center {
+      margin: auto;
+    }
+  }
+  &-web {
+    background-color: $light-color;
+  }
+}
+
+.right {
+  right: 0;
+
+  &-index,
+  &-design {
+    background-color: $light-color;
+    min-height: 100vh;
+    overflow-y: auto;
+  }
+  &-web {
+    background-color: $dark-color;
+  }
+}

@@ -1,11 +1,14 @@
 @import "config";
 @import "utilities";
+@import "splitscreens";
 @import "menus";
 @import "modal";
 @import "design";
 @import "scrollbar";
 @import "inner";
 @import "sal";
+@import "web";
+@import "index";
 
 * {
   margin: 0;
@@ -31,26 +34,3 @@ body {
   left: 50%;
   transform: translate(-50%);
 }
-
-.split {
-  height: 100%;
-  width: 50%;
-  position: fixed;
-  z-index: -10;
-  top: 0;
-  padding-top: 0;
-}
-
-.left {
-  left: 0;
-  background-color: $dark-color;
-}
-
-.right {
-  right: 0;
-  background-color: $light-color;
-}
-
-// .name:hover ~ .cursor {
-//   transform: translate(-50%, -50%) scale(4);
-// }

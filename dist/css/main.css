@@ -15,7 +15,7 @@
   padding: 1rem 4rem;
   text-decoration: none; }
 
-.btns-design-right {
+.btns-design-right, .btns-web-right {
   display: inline-block;
   position: relative;
   cursor: pointer;
@@ -32,6 +32,16 @@
     text-decoration: none;
     background: #ccc;
     color: #333; }
+
+.btns-web {
+  transition: all 0.3s ease;
+  margin: 1rem;
+  display: flex;
+  justify-content: space-between; }
+  .btns-web-right {
+    text-decoration: none;
+    background: #333;
+    color: #ccc; }
 
 .btn {
   transition: all 0.3s ease;
@@ -58,6 +68,33 @@ span {
   transform: translate(-50%, -50%);
   transition: transform 0.3s ease;
   z-index: 20000; }
+
+.split {
+  height: 100%;
+  width: 50%;
+  position: fixed;
+  z-index: -10;
+  top: 0;
+  padding-top: 0; }
+
+.left {
+  left: 0; }
+  .left-index, .left-design {
+    background-color: #333;
+    position: fixed; }
+    .left-index .center, .left-design .center {
+      margin: auto; }
+  .left-web {
+    background-color: #ccc; }
+
+.right {
+  right: 0; }
+  .right-index, .right-design {
+    background-color: #ccc;
+    min-height: 100vh;
+    overflow-y: auto; }
+  .right-web {
+    background-color: #333; }
 
 .sections {
   height: 100%;
@@ -200,7 +237,7 @@ span {
   padding: 1rem 4rem;
   text-decoration: none; }
 
-.btns-design-right {
+.btns-design-right, .btns-web-right {
   display: inline-block;
   position: relative;
   cursor: pointer;
@@ -217,6 +254,16 @@ span {
     text-decoration: none;
     background: #ccc;
     color: #333; }
+
+.btns-web {
+  transition: all 0.3s ease;
+  margin: 1rem;
+  display: flex;
+  justify-content: space-between; }
+  .btns-web-right {
+    text-decoration: none;
+    background: #333;
+    color: #ccc; }
 
 .btn {
   transition: all 0.3s ease;
@@ -288,35 +335,18 @@ span {
       background: none;
       border: 2px solid #ccc; }
 
-.split {
-  height: 100%;
-  z-index: -10;
-  top: 0;
-  padding-top: 0; }
-
-.left {
-  left: 0;
-  background-color: #333;
-  position: fixed; }
-  .left .center {
-    margin: auto; }
-
-.right {
-  right: 0;
-  width: 50%;
-  background-color: #ccc;
-  min-height: 100vh;
-  overflow-y: auto; }
-  .right .work {
+.right-design {
+  right: 0; }
+  .right-design .work {
     display: flex;
     flex-direction: column;
     margin: 2rem auto;
     max-width: 80%; }
-    .right .work h1 {
+    .right-design .work h1 {
       color: #333; }
-    .right .work .type {
+    .right-design .work .type {
       align-items: center; }
-      .right .work .type .showcase {
+      .right-design .work .type .showcase {
         display: flex;
         flex-direction: column;
         background: #d6d6d6;
@@ -324,45 +354,45 @@ span {
         -webkit-box-shadow: 5px 5px 15px -10px #333333;
         -moz-box-shadow: 5px 5px 15px -10px #333333;
         box-shadow: 5px 5px 15px -10px #333333; }
-        .right .work .type .showcase-img {
+        .right-design .work .type .showcase-img {
           position: relative;
           width: 100%; }
-          .right .work .type .showcase-img img {
+          .right-design .work .type .showcase-img img {
             width: 100%;
             margin: 0.6rem 0.4rem 0.4rem 0; }
-        .right .work .type .showcase-title {
+        .right-design .work .type .showcase-title {
           font-family: "Raleway", sans-serif;
           text-align: center;
           padding: 0 0.8rem;
           margin: auto; }
-          .right .work .type .showcase-title a {
+          .right-design .work .type .showcase-title a {
             text-decoration: none; }
-          .right .work .type .showcase-title .title {
+          .right-design .work .type .showcase-title .title {
             color: #333;
             font-size: 1.1rem; }
-          .right .work .type .showcase-title .year {
+          .right-design .work .type .showcase-title .year {
             font-size: 0.8rem;
             color: #979797;
             margin: 0;
             padding: 0; }
-        .right .work .type .showcase .content {
+        .right-design .work .type .showcase .content {
           font-weight: 500;
           text-align: center;
           color: #333;
           padding: 0.2rem 0.8rem 0.8rem 0.8rem;
           bottom: 10px; }
-    .right .work .more-coming {
+    .right-design .work .more-coming {
       color: #333;
       margin: 2.5rem auto 0; }
 
-.name-content {
+.name-content-design {
   line-height: 1.2; }
-  .name-content .name-design {
+  .name-content-design .name-design-design {
     font-family: "Holtwood One SC", serif;
+    color: #ccc;
     font-size: 3rem;
-    letter-spacing: 0.1rem;
-    color: #ccc; }
-  .name-content .description {
+    letter-spacing: 0.1rem; }
+  .name-content-design .description-design {
     font-family: "Raleway", sans-serif;
     font-size: 1rem;
     letter-spacing: 0.6rem;
@@ -374,67 +404,6 @@ span {
     background: #ccc; }
   ::-webkit-scrollbar-thumb {
     background: #333; }
-
-.center {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  text-align: center; }
-
-.btn-left, .btn-right {
-  display: inline-block;
-  text-transform: uppercase;
-  position: relative;
-  cursor: none;
-  font-weight: 600;
-  margin: auto;
-  padding: 1rem 4rem;
-  text-decoration: none; }
-
-.btns-design-right {
-  display: inline-block;
-  position: relative;
-  cursor: pointer;
-  font-weight: 600;
-  margin: auto;
-  padding: 0.6rem 1.8rem; }
-
-.btns-design {
-  transition: all 0.3s ease;
-  margin: 1rem;
-  display: flex;
-  justify-content: space-between; }
-  .btns-design-right {
-    text-decoration: none;
-    background: #ccc;
-    color: #333; }
-
-.btn {
-  transition: all 0.3s ease;
-  z-index: 15000; }
-  .btn-left {
-    border: solid 2px #ccc;
-    color: #ccc; }
-  .btn-right {
-    border: solid 2px #333;
-    color: #333; }
-
-span {
-  pointer-events: none;
-  display: inline-block; }
-
-.cursor {
-  pointer-events: none;
-  width: 20px;
-  height: 20px;
-  background: #fff;
-  border-radius: 50%;
-  position: fixed;
-  mix-blend-mode: difference;
-  transform: translate(-50%, -50%);
-  transition: transform 0.3s ease;
-  z-index: 20000; }
 
 .content-inner {
   font-weight: 500;
@@ -803,6 +772,95 @@ body.sal-disabled [data-sal|="flip"] {
   transform: none; }
 
 /*# sourceMappingURL=sal.css.map*/
+.right-web {
+  right: 0; }
+  .right-web .work {
+    display: flex;
+    flex-direction: column;
+    margin: 2rem auto;
+    max-width: 80%; }
+    .right-web .work h1 {
+      color: #ccc; }
+    .right-web .work .type {
+      align-items: center; }
+      .right-web .work .type .showcase {
+        display: flex;
+        flex-direction: column;
+        background: #444444;
+        margin: 1rem;
+        -webkit-box-shadow: 5px 5px 15px -10px #525252;
+        -moz-box-shadow: 5px 5px 15px -10px #525252;
+        box-shadow: 5px 5px 15px -10px #525252; }
+        .right-web .work .type .showcase-img {
+          position: relative;
+          width: 100%; }
+          .right-web .work .type .showcase-img img {
+            width: 100%;
+            margin: 0.6rem 0.4rem 0.4rem 0; }
+        .right-web .work .type .showcase-title {
+          font-family: "Raleway", sans-serif;
+          text-align: center;
+          padding: 0 0.8rem;
+          margin: auto; }
+          .right-web .work .type .showcase-title a {
+            text-decoration: none; }
+          .right-web .work .type .showcase-title .title {
+            color: #ccc;
+            font-size: 1.1rem; }
+          .right-web .work .type .showcase-title .year {
+            font-size: 0.8rem;
+            color: #979797;
+            margin: 0;
+            padding: 0; }
+        .right-web .work .type .showcase .content {
+          font-weight: 500;
+          text-align: center;
+          color: #ccc;
+          padding: 0.2rem 0.8rem 0.8rem 0.8rem;
+          bottom: 10px; }
+    .right-web .work .more-coming {
+      color: #333;
+      margin: 2.5rem auto 0; }
+
+.name-content-web {
+  line-height: 1.2; }
+  .name-content-web .name-design-web {
+    font-family: "Holtwood One SC", serif;
+    font-size: 3rem;
+    letter-spacing: 0.1rem;
+    color: #333; }
+  .name-content-web .description-web {
+    font-size: 1rem;
+    letter-spacing: 0.6rem;
+    color: #333; }
+
+.name {
+  position: absolute;
+  font-family: "Holtwood One SC", serif;
+  text-shadow: 2px 2px 0px #ba1300;
+  padding: 1rem;
+  text-align: center;
+  z-index: 1000;
+  color: #eab354;
+  left: 50%;
+  transform: translate(-50%); }
+
+.split {
+  height: 100%;
+  width: 50%;
+  position: fixed;
+  z-index: -10;
+  top: 0;
+  padding-top: 0; }
+
+.left-index {
+  left: 0;
+  background-color: #333; }
+
+.right-index {
+  right: 0;
+  background-color: #ccc; }
+
 * {
   margin: 0;
   padding: 0;
@@ -824,19 +882,3 @@ body {
   color: #eab354;
   left: 50%;
   transform: translate(-50%); }
-
-.split {
-  height: 100%;
-  width: 50%;
-  position: fixed;
-  z-index: -10;
-  top: 0;
-  padding-top: 0; }
-
-.left {
-  left: 0;
-  background-color: #333; }
-
-.right {
-  right: 0;
-  background-color: #ccc; }

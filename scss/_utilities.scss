@@ -41,6 +41,19 @@
     color: $dark-color;
   }
 }
+.btns-web {
+  transition: all 0.3s ease;
+  margin: 1rem;
+  display: flex;
+  justify-content: space-between;
+
+  &-right {
+    @extend %btn-design;
+    text-decoration: none;
+    background: $dark-color;
+    color: $light-color;
+  }
+}
 
 .btn {
   transition: all 0.3s ease;
