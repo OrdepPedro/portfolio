@@ -773,7 +773,8 @@ body.sal-disabled [data-sal|="flip"] {
 
 /*# sourceMappingURL=sal.css.map*/
 .right-web {
-  right: 0; }
+  right: 0;
+  overflow-y: auto; }
   .right-web .work {
     display: flex;
     flex-direction: column;
@@ -818,8 +819,24 @@ body.sal-disabled [data-sal|="flip"] {
           color: #ccc;
           padding: 0.2rem 0.8rem 0.8rem 0.8rem;
           bottom: 10px; }
-    .right-web .work .more-coming {
-      color: #333;
+        .right-web .work .type .showcase .links-web {
+          text-align: center;
+          margin: auto 1rem 1rem 1rem; }
+          .right-web .work .type .showcase .links-web a {
+            text-decoration: none;
+            color: #ccc;
+            font-weight: 500;
+            padding: 0.5rem; }
+        .right-web .work .type .showcase .tech-web {
+          font-size: 0.9rem;
+          font-weight: 500;
+          margin: auto 0.5rem 0.5rem; }
+          .right-web .work .type .showcase .tech-web-text {
+            color: #ccc; }
+          .right-web .work .type .showcase .tech-web-highlight {
+            color: #eab354; }
+    .right-web .work .more-coming-web {
+      color: #ccc;
       margin: 2.5rem auto 0; }
 
 .name-content-web {

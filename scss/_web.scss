@@ -1,5 +1,6 @@
 .right-web {
   right: 0;
+  overflow-y: auto;
 
   .work {
     display: flex;
@@ -57,10 +58,31 @@
           padding: 0.2rem 0.8rem 0.8rem 0.8rem;
           bottom: 10px;
         }
+        .links-web {
+          text-align: center;
+          margin: auto 1rem 1rem 1rem;
+          a {
+            text-decoration: none;
+            color: $light-color;
+            font-weight: 500;
+            padding: 0.5rem;
+          }
+        }
+        .tech-web {
+          font-size: 0.9rem;
+          font-weight: 500;
+          margin: auto 0.5rem 0.5rem;
+          &-text {
+            color: $light-color;
+          }
+          &-highlight {
+            color: $yellow-color;
+          }
+        }
       }
     }
-    .more-coming {
-      color: $dark-color;
+    .more-coming-web {
+      color: $light-color;
       margin: 2.5rem auto 0;
     }
   }
