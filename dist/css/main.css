@@ -172,6 +172,7 @@ span {
       padding-right: 0.2rem; }
   .sections2 li {
     list-style: none;
+    margin: 0.4rem 0;
     padding-top: 0.4rem 0; }
   .sections2 .contact-me {
     background: #ccc;
@@ -198,6 +199,11 @@ span {
       margin: 0; }
     .sections2 .contact-me:hover span {
       color: #ccc; }
+    .sections2 .contact-me .follow-me {
+      margin-top: 1rem;
+      text-align: left; }
+      .sections2 .contact-me .follow-me a {
+        padding: 0 0.2rem; }
   .sections2 .resume {
     background: #ccc;
     padding: 1rem;
@@ -404,6 +410,14 @@ span {
     background: #ccc; }
   ::-webkit-scrollbar-thumb {
     background: #333; }
+
+.center .info a {
+  color: #ccc;
+  text-decoration: none; }
+
+.center .social a {
+  color: #ccc;
+  padding: 0.2rem; }
 
 .content-inner {
   font-weight: 500;
@@ -850,6 +864,10 @@ body.sal-disabled [data-sal|="flip"] {
     font-size: 1rem;
     letter-spacing: 0.6rem;
     color: #333; }
+
+.social-web a {
+  color: #333;
+  padding: 0.2rem; }
 
 .name {
   position: absolute;
