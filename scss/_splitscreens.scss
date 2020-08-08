@@ -1,15 +1,17 @@
 .split {
   height: 100%;
+  width: 50%;
   position: fixed;
-  display: flex;
-  flex-direction: row;
+  z-index: 1;
+  top: 0;
+  overflow-x: hidden;
 }
 
 .left {
   &-index,
   &-design {
+    left: 0;
     background-color: $dark-color;
-    position: fixed;
     .center {
       margin: auto;
     }
@@ -23,9 +25,8 @@
   right: 0;
   &-index,
   &-design {
+    right: 0;
     background-color: $light-color;
-    min-height: 100vh;
-    overflow-y: auto;
   }
   &-web {
     background-color: $dark-color;

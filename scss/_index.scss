@@ -9,20 +9,3 @@
   left: 50%;
   transform: translate(-50%);
 }
-
-.split {
-  height: 100%;
-  width: 50%;
-  position: fixed;
-  z-index: -10;
-}
-
-.left-index {
-  left: 0;
-  background-color: $dark-color;
-}
-
-.right-index {
-  right: 0;
-  background-color: $light-color;
-}

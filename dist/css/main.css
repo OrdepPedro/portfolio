@@ -71,13 +71,15 @@ span {
 
 .split {
   height: 100%;
+  width: 50%;
   position: fixed;
-  display: flex;
-  flex-direction: row; }
+  z-index: 1;
+  top: 0;
+  overflow-x: hidden; }
 
 .left-index, .left-design {
-  background-color: #333;
-  position: fixed; }
+  left: 0;
+  background-color: #333; }
   .left-index .center, .left-design .center {
     margin: auto; }
 
@@ -87,9 +89,8 @@ span {
 .right {
   right: 0; }
   .right-index, .right-design {
-    background-color: #ccc;
-    min-height: 100vh;
-    overflow-y: auto; }
+    right: 0;
+    background-color: #ccc; }
   .right-web {
     background-color: #333; }
 
@@ -747,20 +748,6 @@ body.sal-disabled [data-sal|="flip"] {
   left: 50%;
   transform: translate(-50%); }
 
-.split {
-  height: 100%;
-  width: 50%;
-  position: fixed;
-  z-index: -10; }
-
-.left-index {
-  left: 0;
-  background-color: #333; }
-
-.right-index {
-  right: 0;
-  background-color: #ccc; }
-
 @media screen and (max-width: 824px) {
   .name {
     font-size: 1.8rem; }
@@ -774,8 +761,27 @@ body.sal-disabled [data-sal|="flip"] {
     .name .text {
       padding: auto 5rem; }
   .split {
-    display: flex;
-    flex-direction: row; }
+    height: 50%;
+    width: 100%;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    overflow-x: hidden; }
+  .left-index, .left-design {
+    left: 0;
+    background-color: #333; }
+    .left-index .center, .left-design .center {
+      margin: auto; }
+  .left-web {
+    background-color: #ccc; }
+  .right {
+    right: 0; }
+    .right-index, .right-design {
+      right: 0;
+      top: 50%;
+      background-color: #ccc; }
+    .right-web {
+      background-color: #333; }
   .btn {
     padding: 0.8rem 1.8rem;
     font-size: 0.8rem; } }

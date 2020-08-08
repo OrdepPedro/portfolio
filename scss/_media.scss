@@ -15,9 +15,41 @@
       padding: auto 5rem;
     }
   }
+
   .split {
-    display: flex;
-    flex-direction: row;
+    height: 50%;
+    width: 100%;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    overflow-x: hidden;
+  }
+
+  .left {
+    &-index,
+    &-design {
+      left: 0;
+      background-color: $dark-color;
+      .center {
+        margin: auto;
+      }
+    }
+    &-web {
+      background-color: $light-color;
+    }
+  }
+
+  .right {
+    right: 0;
+    &-index,
+    &-design {
+      right: 0;
+      top: 50%;
+      background-color: $light-color;
+    }
+    &-web {
+      background-color: $dark-color;
+    }
   }
 
   .btn {
