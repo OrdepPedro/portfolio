@@ -68,6 +68,16 @@
     border: solid 2px $dark-color;
     color: $dark-color;
   }
+  &-submit {
+    background-color: $light-color;
+    border: none;
+    color: $dark-color;
+    display: inline-block;
+    position: relative;
+    cursor: pointer;
+    font-weight: 600;
+    text-transform: uppercase;
+  }
 }
 
 span {

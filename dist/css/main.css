@@ -52,6 +52,15 @@
   .btn-right {
     border: solid 2px #333;
     color: #333; }
+  .btn-submit {
+    background-color: #ccc;
+    border: none;
+    color: #333;
+    display: inline-block;
+    position: relative;
+    cursor: pointer;
+    font-weight: 600;
+    text-transform: uppercase; }
 
 span {
   pointer-events: none;
@@ -148,6 +157,15 @@ span {
   .btn-right {
     border: solid 2px #333;
     color: #333; }
+  .btn-submit {
+    background-color: #ccc;
+    border: none;
+    color: #333;
+    display: inline-block;
+    position: relative;
+    cursor: pointer;
+    font-weight: 600;
+    text-transform: uppercase; }
 
 span {
   pointer-events: none;
@@ -208,6 +226,8 @@ span {
       height: 8rem;
       background: none;
       border: 2px solid #ccc; }
+    .modal .form-fields button {
+      margin: 0.8rem 1rem; }
 
 .right-design {
   right: 0; }
