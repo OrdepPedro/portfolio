@@ -60,6 +60,7 @@
     position: relative;
     cursor: pointer;
     font-weight: 600;
+    padding: 1rem;
     text-transform: uppercase; }
 
 span {
@@ -165,6 +166,7 @@ span {
     position: relative;
     cursor: pointer;
     font-weight: 600;
+    padding: 1rem;
     text-transform: uppercase; }
 
 span {
@@ -228,6 +230,9 @@ span {
       border: 2px solid #ccc; }
     .modal .form-fields button {
       margin: 0.8rem 1rem; }
+    .modal .form-fields .recap {
+      width: 150px;
+      height: auto; }
 
 .right-design {
   right: 0; }
