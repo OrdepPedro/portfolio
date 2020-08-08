@@ -79,18 +79,24 @@
           <a id="closeModal" href="#"><i class="fas fa-times"></i></a>
         </div>
       </div>
-      <form class="form-fields">
-        <input type="text" placeholder=" First and Last Name..." />
-        <input type="text" placeholder=" Subject..." />
-        <input type="email" placeholder=" Email..." />
+      <form
+        class="form-fields"
+        method="POST"
+        data-netlify="true"
+        data-netlify-recaptcha="true"
+      >
+        <input type="text" placeholder=" First and Last Name..." name="name" />
+        <input type="text" placeholder=" Subject..." name="subject" />
+        <input type="email" placeholder=" Email..." name="email" />
         <textarea
-          name="Message"
+          name="message"
           id=""
           cols="30"
           rows="10"
           placeholder="Enter Message..."
-        ></textarea
-        ><button type="submit" class="btn btn-submit">Submit</button>
+        ></textarea>
+        <div data-netlify-recaptcha="true" style="margin: 2rem;"></div>
+        <button type="submit" class="btn btn-submit">Submit</button>
       </form>
     </div>
     <div class="cursor"></div>
