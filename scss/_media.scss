@@ -1,0 +1,27 @@
+@media screen and (max-width: 824px) {
+  .name {
+    font-size: 1.8rem;
+  }
+  .cursor {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .name {
+    font-size: 1rem;
+    margin: auto;
+    .text {
+      padding: auto 5rem;
+    }
+  }
+  .split {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .btn {
+    padding: 0.8rem 1.8rem;
+    font-size: 0.8rem;
+  }
+}

@@ -71,21 +71,18 @@ span {
 
 .split {
   height: 100%;
-  width: 50%;
   position: fixed;
-  z-index: -10;
-  top: 0;
-  padding-top: 0; }
+  display: flex;
+  flex-direction: row; }
 
-.left {
-  left: 0; }
-  .left-index, .left-design {
-    background-color: #333;
-    position: fixed; }
-    .left-index .center, .left-design .center {
-      margin: auto; }
-  .left-web {
-    background-color: #ccc; }
+.left-index, .left-design {
+  background-color: #333;
+  position: fixed; }
+  .left-index .center, .left-design .center {
+    margin: auto; }
+
+.left-web {
+  background-color: #ccc; }
 
 .right {
   right: 0; }
@@ -95,136 +92,6 @@ span {
     overflow-y: auto; }
   .right-web {
     background-color: #333; }
-
-.sections {
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between; }
-  .sections .about-me {
-    background: #333;
-    padding: 1rem;
-    border-radius: 0 0 10px 0;
-    width: 15.625rem;
-    clip-path: polygon(0 0, 30% 0%, 30% 35%, 0% 35%);
-    transition: all 0.5s ease-out; }
-    .sections .about-me:hover {
-      clip-path: polygon(0 0, 100% 0%, 100% 100%, 0% 100%);
-      background: #ccc; }
-    .sections .about-me p {
-      color: #333;
-      font-weight: 600;
-      margin: 0; }
-    .sections .about-me span {
-      top: 0px;
-      left: 0px;
-      color: #ccc;
-      font-weight: 600;
-      transition: color 0.5s;
-      position: relative;
-      margin: 0; }
-    .sections .about-me:hover span {
-      color: #333; }
-  .sections .know-me {
-    background: #333;
-    padding: 1rem;
-    border-radius: 0 15px 0 0;
-    width: 300px;
-    clip-path: polygon(0 85%, 50% 85%, 50% 100%, 0% 100%);
-    transition: all 0.5s ease-out; }
-    .sections .know-me:hover {
-      clip-path: polygon(0 0, 100% 0%, 100% 100%, 0% 100%);
-      background: #ccc; }
-    .sections .know-me ul {
-      text-align: center;
-      list-style: none;
-      color: #333;
-      font-weight: 600;
-      margin: auto; }
-    .sections .know-me li {
-      padding: 0.4rem 0 0 0; }
-      .sections .know-me li:nth-child(6) {
-        padding-top: 0; }
-      .sections .know-me li i {
-        margin-right: 0.2rem; }
-    .sections .know-me span {
-      top: 0px;
-      left: 0px;
-      color: #ccc;
-      font-weight: 600;
-      transition: color 0.5s;
-      position: relative;
-      margin: 0; }
-    .sections .know-me:hover span {
-      color: #333; }
-
-.sections2 {
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  text-align: right; }
-  .sections2 a {
-    text-decoration: none;
-    color: #ccc;
-    font-weight: 600; }
-    .sections2 a i {
-      padding-right: 0.2rem; }
-  .sections2 li {
-    list-style: none;
-    margin: 0.4rem 0;
-    padding-top: 0.4rem 0; }
-  .sections2 .contact-me {
-    background: #ccc;
-    padding: 1rem;
-    border-radius: 0 0 0 10px;
-    width: 15.625rem;
-    clip-path: polygon(35% 0, 100% 0%, 100% 30%, 35% 30%);
-    transition: all 0.5s ease-out;
-    margin-left: auto; }
-    .sections2 .contact-me:hover {
-      clip-path: polygon(0 0, 100% 0%, 100% 100%, 0% 100%);
-      background: #333; }
-    .sections2 .contact-me p {
-      color: #ccc;
-      font-weight: 600;
-      margin: 0; }
-    .sections2 .contact-me span {
-      top: 0px;
-      left: 0px;
-      color: #333;
-      font-weight: 600;
-      transition: color 0.5s;
-      position: relative;
-      margin: 0; }
-    .sections2 .contact-me:hover span {
-      color: #ccc; }
-    .sections2 .contact-me .follow-me {
-      margin-top: 1rem;
-      text-align: left; }
-      .sections2 .contact-me .follow-me a {
-        padding: 0 0.2rem; }
-  .sections2 .resume {
-    background: #ccc;
-    padding: 1rem;
-    border-radius: 0 0 0 0;
-    width: 200px;
-    clip-path: polygon(30% 50%, 100% 50%, 100% 100%, 30% 100%);
-    transition: all 0.5s ease-out;
-    margin-left: auto; }
-    .sections2 .resume:hover {
-      clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
-      background: #333; }
-    .sections2 .resume span {
-      top: 0px;
-      left: 0px;
-      color: #333;
-      font-weight: 600;
-      transition: color 0.5s;
-      position: relative;
-      margin: 0; }
-    .sections2 .resume:hover span {
-      color: #ccc; }
 
 .center {
   position: absolute;
@@ -873,7 +740,7 @@ body.sal-disabled [data-sal|="flip"] {
   position: absolute;
   font-family: "Holtwood One SC", serif;
   text-shadow: 2px 2px 0px #ba1300;
-  padding: 1rem;
+  padding: 0.4rem;
   text-align: center;
   z-index: 1000;
   color: #eab354;
@@ -884,9 +751,7 @@ body.sal-disabled [data-sal|="flip"] {
   height: 100%;
   width: 50%;
   position: fixed;
-  z-index: -10;
-  top: 0;
-  padding-top: 0; }
+  z-index: -10; }
 
 .left-index {
   left: 0;
@@ -896,6 +761,25 @@ body.sal-disabled [data-sal|="flip"] {
   right: 0;
   background-color: #ccc; }
 
+@media screen and (max-width: 824px) {
+  .name {
+    font-size: 1.8rem; }
+  .cursor {
+    display: none; } }
+
+@media screen and (max-width: 500px) {
+  .name {
+    font-size: 1rem;
+    margin: auto; }
+    .name .text {
+      padding: auto 5rem; }
+  .split {
+    display: flex;
+    flex-direction: row; }
+  .btn {
+    padding: 0.8rem 1.8rem;
+    font-size: 0.8rem; } }
+
 * {
   margin: 0;
   padding: 0;
@@ -904,16 +788,4 @@ body.sal-disabled [data-sal|="flip"] {
 body {
   position: relative;
   font-family: "Raleway", sans-serif;
-  height: 100%;
-  cursor: none; }
-
-.name {
-  position: absolute;
-  font-family: "Holtwood One SC", serif;
-  text-shadow: 2px 2px 0px #ba1300;
-  padding: 1rem;
-  text-align: center;
-  z-index: 1000;
-  color: #eab354;
-  left: 50%;
-  transform: translate(-50%); }
+  height: 100%; }

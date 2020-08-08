@@ -2,7 +2,7 @@
   position: absolute;
   font-family: "Holtwood One SC", serif;
   text-shadow: 2px 2px 0px rgba(186, 19, 0, 1);
-  padding: 1rem;
+  padding: 0.4rem;
   text-align: center;
   z-index: 1000;
   color: $yellow-color;
@@ -15,8 +15,6 @@
   width: 50%;
   position: fixed;
   z-index: -10;
-  top: 0;
-  padding-top: 0;
 }
 
 .left-index {

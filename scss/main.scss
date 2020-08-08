@@ -9,6 +9,7 @@
 @import "sal";
 @import "web";
 @import "index";
+@import "media";
 
 * {
   margin: 0;
@@ -20,17 +21,4 @@ body {
   position: relative;
   font-family: "Raleway", sans-serif;
   height: 100%;
-  cursor: none;
-}
-
-.name {
-  position: absolute;
-  font-family: "Holtwood One SC", serif;
-  text-shadow: 2px 2px 0px rgba(186, 19, 0, 1);
-  padding: 1rem;
-  text-align: center;
-  z-index: 1000;
-  color: $yellow-color;
-  left: 50%;
-  transform: translate(-50%);
 }
