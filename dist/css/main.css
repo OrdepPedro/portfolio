@@ -781,6 +781,7 @@ body.sal-disabled [data-sal|="flip"] {
       top: 50%;
       background-color: #ccc; }
     .right-web {
+      top: 50%;
       background-color: #333; }
   .btn {
     padding: 0.8rem 1.8rem;
