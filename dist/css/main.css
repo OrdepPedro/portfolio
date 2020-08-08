@@ -195,7 +195,7 @@ span {
   border: 2px solid #ccc;
   z-index: 10000;
   width: 600px;
-  max-width: 75%; }
+  max-width: 95%; }
   .modal.active {
     transform: translate(-50%, -50%) scale(1); }
   .modal .modal-header {
