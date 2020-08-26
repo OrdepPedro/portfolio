@@ -1,3 +1,62 @@
+@media screen and (min-width: 1500px) {
+  // Index
+  .name {
+    font-size: 2.4rem;
+  }
+  .btn {
+    font-size: 1.5rem;
+  }
+  // Web Portfolio
+  .btns-web {
+    font-size: 1.5rem;
+    &-right {
+      padding: 1rem 2.4rem;
+    }
+  }
+
+  .social-web {
+    a {
+      font-size: 1.5rem;
+      padding: 0.4rem;
+    }
+  }
+
+  .name-content-web {
+    .name-design-web {
+      font-size: 4rem;
+    }
+    .description-web {
+      font-size: 1.5rem;
+    }
+  }
+  .right-web {
+    .work {
+      h1 {
+        font-size: 2.6rem;
+      }
+      .type {
+        .showcase-title {
+          .title {
+            font-size: 1.8rem;
+          }
+          .year {
+            font-size: 1.5rem;
+          }
+        }
+        .content {
+          font-size: 1.5rem;
+        }
+        .links-web {
+          font-size: 1.5rem;
+        }
+        .tech-web-text {
+          font-size: 1.1rem;
+        }
+      }
+    }
+  }
+}
+
 @media screen and (max-width: 824px) {
   .name {
     font-size: 1.8rem;

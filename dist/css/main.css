@@ -773,6 +773,35 @@ body.sal-disabled [data-sal|="flip"] {
   left: 50%;
   transform: translate(-50%); }
 
+@media screen and (min-width: 1500px) {
+  .name {
+    font-size: 2.4rem; }
+  .btn {
+    font-size: 1.5rem; }
+  .btns-web {
+    font-size: 1.5rem; }
+    .btns-web-right {
+      padding: 1rem 2.4rem; }
+  .social-web a {
+    font-size: 1.5rem;
+    padding: 0.4rem; }
+  .name-content-web .name-design-web {
+    font-size: 4rem; }
+  .name-content-web .description-web {
+    font-size: 1.5rem; }
+  .right-web .work h1 {
+    font-size: 2.6rem; }
+  .right-web .work .type .showcase-title .title {
+    font-size: 1.8rem; }
+  .right-web .work .type .showcase-title .year {
+    font-size: 1.5rem; }
+  .right-web .work .type .content {
+    font-size: 1.5rem; }
+  .right-web .work .type .links-web {
+    font-size: 1.5rem; }
+  .right-web .work .type .tech-web-text {
+    font-size: 1.1rem; } }
+
 @media screen and (max-width: 824px) {
   .name {
     font-size: 1.8rem; }
