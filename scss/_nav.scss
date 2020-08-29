@@ -1,0 +1,30 @@
+// Navbars
+.nav {
+  &-left,
+  .center {
+    top: 96%;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+
+    a {
+      text-decoration: none;
+      color: $light-color;
+      font-weight: 600;
+      border-bottom: 2px solid $light-color;
+    }
+  }
+  &-right,
+  center {
+    top: 96%;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    a {
+      text-decoration: none;
+      color: $dark-color;
+      font-weight: 600;
+      border-bottom: 2px solid $dark-color;
+    }
+  }
+}

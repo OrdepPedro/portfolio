@@ -104,87 +104,6 @@ span {
   .right-web {
     background-color: #333; }
 
-.center {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  text-align: center; }
-
-.btn-left, .btn-right {
-  display: inline-block;
-  text-transform: uppercase;
-  position: relative;
-  cursor: none;
-  font-weight: 600;
-  margin: auto;
-  padding: 1rem 4rem;
-  text-decoration: none; }
-
-.btns-design-right, .btns-web-right {
-  display: inline-block;
-  position: relative;
-  cursor: pointer;
-  font-weight: 600;
-  margin: auto;
-  padding: 0.6rem 1.8rem; }
-
-.btns-design {
-  transition: all 0.3s ease;
-  margin: 1rem;
-  display: flex;
-  justify-content: space-between; }
-  .btns-design-right {
-    text-decoration: none;
-    background: #ccc;
-    color: #333; }
-
-.btns-web {
-  transition: all 0.3s ease;
-  margin: 1rem;
-  display: flex;
-  justify-content: space-between; }
-  .btns-web-right {
-    text-decoration: none;
-    background: #333;
-    color: #ccc; }
-
-.btn {
-  transition: all 0.3s ease;
-  z-index: 15000; }
-  .btn-left {
-    border: solid 2px #ccc;
-    color: #ccc; }
-  .btn-right {
-    border: solid 2px #333;
-    color: #333; }
-  .btn-submit {
-    background-color: #ccc;
-    border: none;
-    color: #333;
-    display: inline-block;
-    position: relative;
-    cursor: pointer;
-    font-weight: 600;
-    padding: 1rem;
-    text-transform: uppercase; }
-
-span {
-  pointer-events: none;
-  display: inline-block; }
-
-.cursor {
-  pointer-events: none;
-  width: 20px;
-  height: 20px;
-  background: #fff;
-  border-radius: 50%;
-  position: fixed;
-  mix-blend-mode: difference;
-  transform: translate(-50%, -50%);
-  transition: transform 0.3s ease;
-  z-index: 20000; }
-
 .modal {
   position: fixed;
   top: 50%;
@@ -773,6 +692,32 @@ body.sal-disabled [data-sal|="flip"] {
   left: 50%;
   transform: translate(-50%); }
 
+.nav-left,
+.nav .center {
+  top: 96%;
+  position: absolute;
+  display: flex;
+  justify-content: center; }
+  .nav-left a,
+  .nav .center a {
+    text-decoration: none;
+    color: #ccc;
+    font-weight: 600;
+    border-bottom: 2px solid #ccc; }
+
+.nav-right,
+.nav center {
+  top: 96%;
+  position: absolute;
+  display: flex;
+  justify-content: center; }
+  .nav-right a,
+  .nav center a {
+    text-decoration: none;
+    color: #333;
+    font-weight: 600;
+    border-bottom: 2px solid #333; }
+
 @media screen and (min-width: 1500px) {
   .name {
     font-size: 2.4rem; }
@@ -800,7 +745,9 @@ body.sal-disabled [data-sal|="flip"] {
   .right-web .work .type .links-web {
     font-size: 1.5rem; }
   .right-web .work .type .tech-web-text {
-    font-size: 1.1rem; } }
+    font-size: 1.1rem; }
+  .right-web .work .more-coming-web {
+    font-size: 2.2rem; } }
 
 @media screen and (max-width: 824px) {
   .name {
