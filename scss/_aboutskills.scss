@@ -1,0 +1,38 @@
+#about {
+  display: flex;
+  flex-direction: column;
+  color: $light-color;
+  font-weight: 600;
+
+  .profile-img {
+    width: 100%;
+    height: auto;
+    img {
+      width: 150px;
+      height: auto;
+      border: 6px $light-color solid;
+      -webkit-box-shadow: 6px 6px 0px 0px rgba(0, 0, 0, 0.75);
+      -moz-box-shadow: 6px 6px 0px 0px rgba(0, 0, 0, 0.75);
+      box-shadow: 6px 6px 0px 0px rgba(0, 0, 0, 0.75);
+    }
+  }
+  .title {
+    text-shadow: 2px 2px 0px #000000;
+  }
+}
+
+#skills {
+  color: $dark-color;
+  ul {
+    list-style: none;
+  }
+
+  .field-icon {
+    margin: 0.8rem 0;
+  }
+
+  li {
+    font-weight: 600;
+    padding: 0.4rem 0;
+  }
+}

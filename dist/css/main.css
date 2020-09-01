@@ -718,6 +718,34 @@ body.sal-disabled [data-sal|="flip"] {
     font-weight: 600;
     border-bottom: 2px solid #333; }
 
+#about {
+  display: flex;
+  flex-direction: column;
+  color: #ccc;
+  font-weight: 600; }
+  #about .profile-img {
+    width: 100%;
+    height: auto; }
+    #about .profile-img img {
+      width: 150px;
+      height: auto;
+      border: 6px #ccc solid;
+      -webkit-box-shadow: 6px 6px 0px 0px rgba(0, 0, 0, 0.75);
+      -moz-box-shadow: 6px 6px 0px 0px rgba(0, 0, 0, 0.75);
+      box-shadow: 6px 6px 0px 0px rgba(0, 0, 0, 0.75); }
+  #about .title {
+    text-shadow: 2px 2px 0px #000000; }
+
+#skills {
+  color: #333; }
+  #skills ul {
+    list-style: none; }
+  #skills .field-icon {
+    margin: 0.8rem 0; }
+  #skills li {
+    font-weight: 600;
+    padding: 0.4rem 0; }
+
 @media screen and (min-width: 1500px) {
   .name {
     font-size: 2.4rem; }
