@@ -71,7 +71,7 @@
 
 @media screen and (max-width: 500px) {
   .name {
-    font-size: 1rem;
+    font-size: 0.8rem;
     margin: auto;
     .text {
       padding: auto 5rem;
@@ -118,5 +118,42 @@
   .btn {
     padding: 0.8rem 1.8rem;
     font-size: 0.8rem;
+  }
+
+  // About page
+  .left-index {
+    font-size: 0.8rem;
+    .anchor-left {
+      padding: 0.4rem 0 0 0;
+      a {
+        border-bottom: 1px solid $light-color;
+        font-weight: 600;
+      }
+    }
+  }
+  .right-index {
+    font-size: 0.8rem;
+    .anchor-right {
+      padding: 0.4rem 0 0 0;
+      a {
+        border-bottom: 1px solid $dark-color;
+        font-weight: 600;
+      }
+    }
+  }
+  #about {
+    margin-top: 1rem;
+    font-size: 0.7rem;
+    .profile-img {
+      img {
+        width: 80px;
+      }
+    }
+  }
+  #skills {
+    font-size: 0.7rem;
+    .field-icon {
+      margin: 0.4rem 0;
+    }
   }
 }

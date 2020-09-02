@@ -739,16 +739,13 @@ body.sal-disabled [data-sal|="flip"] {
   flex-direction: column;
   color: #ccc;
   font-weight: 600; }
-  #about .profile-img {
-    width: 100%;
-    height: auto; }
-    #about .profile-img img {
-      width: 150px;
-      height: auto;
-      border: 6px #ccc solid;
-      -webkit-box-shadow: 6px 6px 0px 0px rgba(0, 0, 0, 0.75);
-      -moz-box-shadow: 6px 6px 0px 0px rgba(0, 0, 0, 0.75);
-      box-shadow: 6px 6px 0px 0px rgba(0, 0, 0, 0.75); }
+  #about .profile-img img {
+    width: 150px;
+    height: auto;
+    border: 6px #ccc solid;
+    -webkit-box-shadow: 6px 6px 0px 0px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 6px 6px 0px 0px rgba(0, 0, 0, 0.75);
+    box-shadow: 6px 6px 0px 0px rgba(0, 0, 0, 0.75); }
   #about .title {
     text-shadow: 2px 2px 0px #000000; }
 
@@ -805,7 +802,7 @@ body.sal-disabled [data-sal|="flip"] {
 
 @media screen and (max-width: 500px) {
   .name {
-    font-size: 1rem;
+    font-size: 0.8rem;
     margin: auto; }
     .name .text {
       padding: auto 5rem; }
@@ -834,7 +831,30 @@ body.sal-disabled [data-sal|="flip"] {
       background-color: #333; }
   .btn {
     padding: 0.8rem 1.8rem;
-    font-size: 0.8rem; } }
+    font-size: 0.8rem; }
+  .left-index {
+    font-size: 0.8rem; }
+    .left-index .anchor-left {
+      padding: 0.4rem 0 0 0; }
+      .left-index .anchor-left a {
+        border-bottom: 1px solid #ccc;
+        font-weight: 600; }
+  .right-index {
+    font-size: 0.8rem; }
+    .right-index .anchor-right {
+      padding: 0.4rem 0 0 0; }
+      .right-index .anchor-right a {
+        border-bottom: 1px solid #333;
+        font-weight: 600; }
+  #about {
+    margin-top: 1rem;
+    font-size: 0.7rem; }
+    #about .profile-img img {
+      width: 80px; }
+  #skills {
+    font-size: 0.7rem; }
+    #skills .field-icon {
+      margin: 0.4rem 0; } }
 
 * {
   margin: 0;
