@@ -32,18 +32,31 @@
 
     <div class="split left-index">
       <div class="center">
-        <div id="about">
-          <div class="profile-img">
-            <img src="./img/IMG_61601.jpg" alt="Profile Picture" />
-            <div class="shadow"></div>
-          </div>
-          <h1 class="title">About Me</h1>
-          <p>
-            Hi, I'm Pedro Fontoura. I am a front-end developer and graphic
-            designer based in Belém, state of Pará, Brazil. My goal is to help
-            people and companies with a small budget to promote their services
-            to the world!
-          </p>
+        <div id="contact">
+          <h1 class="title-contact">Contact</h1>
+          <form
+            class="form-fields"
+            method="POST"
+            data-netlify="true"
+            data-netlify-recaptcha="true"
+          >
+            <input
+              type="text"
+              placeholder=" First and Last Name..."
+              name="name"
+            />
+            <input type="text" placeholder=" Subject..." name="subject" />
+            <input type="email" placeholder=" Email..." name="email" />
+            <textarea
+              name="message"
+              id=""
+              cols="30"
+              rows="10"
+              placeholder=" Enter Message..."
+            ></textarea>
+            <!-- <div class="recap" data-netlify-recaptcha="true"></div> -->
+            <button type="submit" class="btn btn-submit hover">Submit</button>
+          </form>
         </div>
         <div class="anchor-left">
           <a class="hover" href="index.html"
@@ -56,21 +69,11 @@
     <div class="split right-index">
       <div class="center">
         <div id="skills">
-          <h1 class="title">Skills</h1>
-          <ul>
-            <i class="fas fa-code field-icon fa-2x"></i>
-            <li><i class="fab fa-html5 fa-lg"></i>HTML5</li>
-            <li><i class="fab fa-css3-alt fa-lg"></i>CSS/SASS</li>
-            <li><i class="fab fa-js fa-lg"></i>Javascript</li>
-
-            <i class="fas fa-bezier-curve field-icon fa-2x"></i>
-            <li><i class="fab fa-adobe fa-lg"></i>Adobe Apps</li>
-            <li><i class="fas fa-user-friends fa-lg"></i>UI/UX</li>
-          </ul>
+          <h1 class="title">Resume</h1>
         </div>
         <div class="anchor-right">
-          <a class="hover" href="contact-resume.html"
-            ><span class="a-text">Contact/Resume </span></a
+          <a class="hover" href="about-skills.html"
+            ><span class="a-text">About/Skills</span></a
           >
         </div>
       </div>

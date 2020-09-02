@@ -1,0 +1,41 @@
+#contact {
+  .title-contact {
+    color: $light-color;
+    text-shadow: 2px 2px 0px #000000;
+    margin: 1rem 0 0.4rem 0;
+  }
+  .form-fields {
+    display: grid;
+    grid-template-columns: 1fr;
+
+    input {
+      color: $light-color;
+      min-width: 350px;
+      font-family: "Raleway", sans-serif;
+      font-weight: 600;
+      margin: 0.4rem 0;
+      height: 2rem;
+      background: none;
+      border: 2px solid $light-color;
+    }
+
+    textarea {
+      color: $light-color;
+      font-family: "Raleway", sans-serif;
+      font-weight: 600;
+      margin: 0.4rem 0;
+      height: 8rem;
+      background: none;
+      border: 2px solid $light-color;
+    }
+
+    button {
+      margin: 0.4rem 0;
+    }
+
+    .recap {
+      width: 150px;
+      height: auto;
+    }
+  }
+}

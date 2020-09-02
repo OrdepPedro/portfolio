@@ -1,6 +1,6 @@
 .left-index {
   .anchor-left {
-    padding: 2rem 0;
+    padding: 2rem 0 0 0;
     a {
       text-decoration: none;
       font-weight: 800;
@@ -39,6 +39,7 @@
   }
   .title {
     text-shadow: 2px 2px 0px #000000;
+    padding: 0.2rem 0 1.6rem;
   }
 }
 
@@ -50,7 +51,7 @@
   }
 
   .field-icon {
-    margin: 0.8rem 0;
+    margin: 0.8rem auto;
   }
 
   li {
