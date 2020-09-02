@@ -718,6 +718,22 @@ body.sal-disabled [data-sal|="flip"] {
     font-weight: 600;
     border-bottom: 2px solid #333; }
 
+.left-index .anchor-left {
+  padding: 2rem 0; }
+  .left-index .anchor-left a {
+    text-decoration: none;
+    font-weight: 800;
+    color: #ccc; }
+
+.right-index .anchor-right {
+  padding: 2rem 0; }
+  .right-index .anchor-right a {
+    text-decoration: none;
+    font-weight: 800;
+    color: #333; }
+  .right-index .anchor-right i {
+    padding-left: 0.4rem; }
+
 #about {
   display: flex;
   flex-direction: column;
@@ -737,7 +753,8 @@ body.sal-disabled [data-sal|="flip"] {
     text-shadow: 2px 2px 0px #000000; }
 
 #skills {
-  color: #333; }
+  color: #333;
+  font-weight: 600; }
   #skills ul {
     list-style: none; }
   #skills .field-icon {
@@ -745,6 +762,9 @@ body.sal-disabled [data-sal|="flip"] {
   #skills li {
     font-weight: 600;
     padding: 0.4rem 0; }
+  #skills .title {
+    padding: 0.4rem 0 1rem 0;
+    text-shadow: 2px 2px 0px #e9e9e9; }
 
 @media screen and (min-width: 1500px) {
   .name {

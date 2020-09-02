@@ -1,3 +1,26 @@
+.left-index {
+  .anchor-left {
+    padding: 2rem 0;
+    a {
+      text-decoration: none;
+      font-weight: 800;
+      color: $light-color;
+    }
+  }
+}
+.right-index {
+  .anchor-right {
+    padding: 2rem 0;
+    a {
+      text-decoration: none;
+      font-weight: 800;
+      color: $dark-color;
+    }
+    i {
+      padding-left: 0.4rem;
+    }
+  }
+}
 #about {
   display: flex;
   flex-direction: column;
@@ -23,6 +46,7 @@
 
 #skills {
   color: $dark-color;
+  font-weight: 600;
   ul {
     list-style: none;
   }
@@ -34,5 +58,9 @@
   li {
     font-weight: 600;
     padding: 0.4rem 0;
+  }
+  .title {
+    padding: 0.4rem 0 1rem 0;
+    text-shadow: 2px 2px 0px #e9e9e9;
   }
 }
