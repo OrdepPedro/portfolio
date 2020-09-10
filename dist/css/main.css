@@ -726,7 +726,7 @@ body.sal-disabled [data-sal|="flip"] {
     color: #ccc; }
 
 .right-index .anchor-right {
-  padding: 2rem 0; }
+  padding: 2rem 0 0 0; }
   .right-index .anchor-right a {
     text-decoration: none;
     font-weight: 800;
@@ -794,6 +794,9 @@ body.sal-disabled [data-sal|="flip"] {
   #contact .form-fields .recap {
     width: 150px;
     height: auto; }
+
+#skills a {
+  color: #333; }
 
 @media screen and (min-width: 1500px) {
   .name {
